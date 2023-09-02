@@ -69,10 +69,62 @@
   bottom: 3rem;
   left: 3rem;
   border-radius: 3px;
-  padding: 0 .4rem;
+  padding: 0.4rem;
   transition: all 1s ease-in-out 0ms;
 }
 
 #tweet-quote-svg{
   font-size: 1rem;
+}
+
+@media (max-width:1600px) {
+  #quote-box{
+    height: 50%;
+  }
+}
+
+@media (max-width:1200px) {
+  #quote-box{
+    height: 70%;
+  }
+}
+
+@media (max-width:600px) {
+  #quote-box{
+    width: 80%;
+    top: 10%;
+    left: 10%;
+  }
+}
+
+@media (max-width:800px) {
+  #new-quote{
+    font-size: 1.5rem;
+  }
+  #author{
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width:400px) {
+  #new-quote{
+    font-size: 1.1rem;
+  }
+  #author{
+    font-size: 1rem;
+  }
+  #new-quote{
+    font-size: .9rem;
+  }
+  #quote-mark{
+    width: 2rem;
+    height: 2rem;
+    margin-top: -1.5rem;
+    margin-left: -2.5rem;
+    margin-right: .5rem;
+  }
+  #tweet-quote-btn{
+    width: 2rem;
+    height: 2rem;
+  }
 }
