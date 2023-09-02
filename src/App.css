@@ -1,38 +1,78 @@
-.App {
+#quote-box{
+  margin: 0 auto;
+  position: absolute;
+  top: 20%;
+  left: 25%;
+  width: 50%;
+  height: 40%;
+  background-color: aliceblue;
+  border-radius: 4px;
+}
+
+#content {
+  padding: 2rem;
+}
+
+#text, #author {
+  animation: textIn 1s ease-in 1;
+}
+
+#text{
+  padding-left: 1rem;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+#quote-mark{
+  width: 3rem;
+  height: 3rem;
+  margin-top: -1.5rem;
+  margin-left: -1rem;
+  margin-right: .5rem;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+#author{
+  position: absolute;
+  bottom: 5rem;
+  right: 3rem;
+  font-size: 1.5rem;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+@keyframes textIn {
+    from{
+      opacity: 0;
+    }
+    to{
+      opacity: 1;
+    }
 }
 
-.App-link {
-  color: #61dafb;
+#new-quote {
+  position: absolute;
+  bottom: 3rem;
+  right: 3rem;
+  background-color: #ADA2FF;
+  padding: .6rem;
+  border: none;
+  color: aliceblue;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 1rem;
+  transition: all 1s ease-in-out 0ms;
+  border-radius: 4px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+#tweet-quote-btn{
+  background-color: #ADA2FF;
+  width: 3rem;
+  height: 3rem;
+  border: none;
+  position: absolute;
+  bottom: 3rem;
+  left: 3rem;
+  border-radius: 3px;
+  padding: 0 .4rem;
+  transition: all 1s ease-in-out 0ms;
+}
+
+#tweet-quote-svg{
+  font-size: 1rem;
 }
