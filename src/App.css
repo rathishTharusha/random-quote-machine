@@ -130,4 +130,7 @@
     width: 2rem;
     height: 2rem;
   }
+  #tweet-quote-svg{
+    margin-top: -1.2rem;
+  }
 }
