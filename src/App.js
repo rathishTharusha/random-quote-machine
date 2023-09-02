@@ -49,7 +49,7 @@ function App() {
     document.getElementById("root").style.backgroundColor = theme
     document.getElementById("root").style.color = theme
     document.getElementById("new-quote").style.backgroundColor = theme
-    document.getElementById("tweet-quote").style.backgroundColor = theme
+    document.getElementById("tweet-quote-btn").style.backgroundColor = theme
     console.log(data.content.length)
     
   }
